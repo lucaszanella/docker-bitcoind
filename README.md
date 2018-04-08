@@ -48,6 +48,8 @@ on environment variables passed to the container:
 | BTC_RPCCLIENTTIMEOUT | 30 |
 | BTC_DISABLEWALLET | 1 |
 | BTC_TXINDEX | 0 |
+| BTC_PRUNED | 0 |
+
 
 
 ## Daemonizing
