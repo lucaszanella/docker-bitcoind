@@ -22,6 +22,7 @@ $ docker run --name bitcoind -d \
    --env 'BTC_RPCPASSWORD=password' \
    --env 'BTC_TXINDEX=1' \
    --env 'BTC_RUN_ARGS="-reindex"' \  # Forwarded on to the bitcoind call.
+   --env 'BTC_PRUNED=0' \ # Change from 0 to desired disk size of pruned blockchain (minimum above 0 is 550, 0 is disabled) 
    --volume /home/youruser/bitcoin_data:/bitcoin \
    -p 8332:8332 \
    --publish 8333:8333 \
